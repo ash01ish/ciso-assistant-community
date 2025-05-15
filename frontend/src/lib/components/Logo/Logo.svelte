@@ -1,8 +1,8 @@
 <script lang="ts">
-	import ciso from '$lib/assets/ciso.svg';
+	import pestle from '$lib/assets/pestle.png';
 
 	export let height = 200;
 	export let width = 200;
 </script>
 
-<img class="c" {height} {width} src={ciso} alt="Ciso-assistant icon" />
+<img class="c" {height} {width} src={pestle} alt="PESTLE icon" />

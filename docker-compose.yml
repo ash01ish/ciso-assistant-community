@@ -1,8 +1,9 @@
 services:
   backend:
     container_name: backend
-    image: ghcr.io/intuitem/ciso-assistant-community/backend:latest
-    pull_policy: always
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     restart: always
     environment:
       - ALLOWED_HOSTS=${ALLOWED_HOSTS:-backend,localhost}
@@ -11,7 +12,6 @@ services:
       - AUTH_TOKEN_TTL=${AUTH_TOKEN_TTL:-7200}
       - DJANGO_SUPERUSER_EMAIL=${DJANGO_SUPERUSER_EMAIL:-admin@pestle.in}
       - DJANGO_SUPERUSER_PASSWORD=${DJANGO_SUPERUSER_PASSWORD:-admin123}
-
     volumes:
       - ./db:/code/db
       - ./backend/library/libraries:/code/library/libraries
@@ -24,8 +24,9 @@ services:
 
   huey:
     container_name: huey
-    image: ghcr.io/intuitem/ciso-assistant-community/backend:latest
-    pull_policy: always
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     depends_on:
       backend:
         condition: service_healthy
@@ -35,7 +36,6 @@ services:
       - CISO_ASSISTANT_URL=${CISO_ASSISTANT_URL:-https://localhost:8443}
       - DJANGO_DEBUG=${DJANGO_DEBUG:-False}
       - AUTH_TOKEN_TTL=${AUTH_TOKEN_TTL:-7200}
-
     volumes:
       - ./db:/code/db
     entrypoint:
@@ -46,13 +46,14 @@ services:
 
   frontend:
     container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     environment:
       - PUBLIC_BACKEND_API_URL=${PUBLIC_BACKEND_API_URL:-http://backend:8000/api}
       - PUBLIC_BACKEND_API_EXPOSED_URL=${PUBLIC_BACKEND_API_EXPOSED_URL:-https://localhost:8443/api}
       - PROTOCOL_HEADER=${PROTOCOL_HEADER:-x-forwarded-proto}
       - HOST_HEADER=${HOST_HEADER:-x-forwarded-host}
-    image: ghcr.io/intuitem/ciso-assistant-community/frontend:latest
-    pull_policy: always
     depends_on:
       backend:
         condition: service_healthy
