@@ -14,6 +14,7 @@ services:
 
     volumes:
       - ./db:/code/db
+      - ./backend/library/libraries:/code/library/libraries
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://backend:8000/api/build || exit 1"]
       interval: 10s

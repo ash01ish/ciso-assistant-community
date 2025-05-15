@@ -107,6 +107,21 @@ and run the starter script
 ./docker-compose.sh
 ```
 
+### Healthcare Technology Demo
+
+For a quick demonstration of CISO Assistant's capabilities in a healthcare setting, you can use our healthcare technology demo setup:
+
+```sh
+./setup_demo_controls.sh
+```
+
+This will create a demo environment with:
+- Healthcare-related assets (AWS Cloud and Kubernetes Cluster)
+- Applied controls from HIPAA, HITRUST CSF, SOC 2, and ISO 27001
+- Realistic security control mapping for healthcare technology
+
+See [DEMO_SETUP.md](DEMO_SETUP.md) for details about the demo scenario and setup.
+
 If you are looking for other installation options for self-hosting, check the [config builder](./config/) and the [docs](https://intuitem.gitbook.io/ciso-assistant).
 
 > [!NOTE]

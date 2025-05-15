@@ -34,9 +34,20 @@ The HITRUST CSF v11 framework includes:
 - **5x5 Risk Matrix** with probability and impact levels
 - **5 Maturity Levels** for scoring
 
-## Generation Process
+## Deployment
 
-The framework is generated following the CISO Assistant repository pattern:
+The framework is deployed automatically when using the main deployment script:
+
+```bash
+# From the repository root
+./deploy.sh
+```
+
+This script handles generating the Excel file, converting it to YAML, and deploying the application.
+
+## Manual Generation Process
+
+The framework can also be generated manually following the CISO Assistant repository pattern:
 
 1. Run the Python script to create the Excel file:
    ```bash
