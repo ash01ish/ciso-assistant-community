@@ -2,7 +2,7 @@ urn: urn:intuitem:risk:library:hitrust-csf-v11
 locale: en
 ref_id: HITRUST-CSF-v11
 name: HITRUST CSF v11
-description: HITRUST Common Security Framework (CSF) version 11 provides prescriptive security, privacy and regulatory compliance requirements
+description: HITRUST Common Security Framework (CSF) version 11
 copyright: © 2024 HITRUST Alliance
 version: '11'
 publication_date: '2025-05-15'
@@ -98,58 +98,32 @@ objects:
     urn: urn:intuitem:risk:framework:hitrust-csf-v11
     ref_id: HITRUST-CSF-v11
     name: HITRUST CSF v11
-    description: HITRUST Common Security Framework version 11 - Comprehensive security and privacy control framework
+    description: HITRUST Common Security Framework version 11
     implementation_groups_definition:
     - ref_id: IG1
       name: Implementation Group 1
-      description: Basic cyber hygiene - Essential controls for all organizations
+      description: Basic cyber hygiene
     - ref_id: IG2
       name: Implementation Group 2
-      description: Enhanced protections - Additional controls for organizations with increased risk
+      description: Enhanced protections
     - ref_id: IG3
       name: Implementation Group 3
-      description: Advanced protections - Comprehensive controls for high-risk organizations
-    scores_definition:
-    - score: 1
-      name: Policy
-      description: Policy established and documented
-    - score: 2
-      name: Procedure
-      description: Procedure documented and implemented
-    - score: 3
-      name: Implemented
-      description: Control implemented and operational
-    - score: 4
-      name: Tested
-      description: Control tested and validated
-    - score: 5
-      name: Managed
-      description: Control managed, monitored, and continuously improved
+      description: Advanced protections
     requirement_nodes:
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
       assessable: false
       depth: 1
       ref_id: '00'
-      name: Information Security Management Program
+      name: 00 - Information Security Management Program
       description: 'HITRUST CSF v11 Control Category 00: Information Security Management Program'
-      implementation_guidance: Establish governance structure and security program
-      key_activities:
-      - Policy development
-      - Role definition
-      - Communication
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
       ref_id: 00.a
-      name: Information Security Roles and Responsibilities
+      name: 00.a - Information Security Roles and Responsibilities
       description: 'HITRUST CSF v11 Control 00.a: Information Security Roles and Responsibilities'
       typical_evidence: Documentation demonstrating implementation of Information Security Roles and Responsibilities
-      implementation_actions:
-      - Define and document information security roles and responsibilities
-      - Establish security governance structure
-      - Communicate security roles throughout the organization
-      - Review and update roles annually
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-01
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
@@ -158,14 +132,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
       ref_id: 00.b
-      name: Information Security in Project Management
+      name: 00.b - Information Security in Project Management
       description: 'HITRUST CSF v11 Control 00.b: Information Security in Project Management'
       typical_evidence: Documentation demonstrating implementation of Information Security in Project Management
-      implementation_actions:
-      - Integrate security requirements into project management methodology
-      - Conduct security reviews at project milestones
-      - Include security stakeholders in project planning
-      - Document security decisions in project documentation
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-01
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
@@ -174,14 +143,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
       ref_id: 00.c
-      name: Segregation of Duties
+      name: 00.c - Segregation of Duties
       description: 'HITRUST CSF v11 Control 00.c: Segregation of Duties'
       typical_evidence: Documentation demonstrating implementation of Segregation of Duties
-      implementation_actions:
-      - Implement segregation of duties policies
-      - Review user permissions regularly
-      - Document conflicting roles and access restrictions
-      - Monitor for SOD violations
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-01
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
@@ -190,14 +154,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
       ref_id: 00.d
-      name: Contact with Authorities
+      name: 00.d - Contact with Authorities
       description: 'HITRUST CSF v11 Control 00.d: Contact with Authorities'
       typical_evidence: Documentation demonstrating implementation of Contact with Authorities
-      implementation_actions:
-      - Establish contact procedures with relevant authorities
-      - Maintain contact list of security agencies
-      - Document incident escalation to authorities
-      - Conduct regular communication exercises
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-01
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
@@ -206,14 +165,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
       ref_id: 00.e
-      name: Contact with Special Interest Groups
+      name: 00.e - Contact with Special Interest Groups
       description: 'HITRUST CSF v11 Control 00.e: Contact with Special Interest Groups'
       typical_evidence: Documentation demonstrating implementation of Contact with Special Interest Groups
-      implementation_actions:
-      - Identify relevant industry groups and forums
-      - Participate in security information sharing
-      - Subscribe to security advisories
-      - Contribute to industry security initiatives
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-01
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
@@ -221,26 +175,16 @@ objects:
       assessable: false
       depth: 1
       ref_id: '01'
-      name: Access Control
+      name: 01 - Access Control
       description: 'HITRUST CSF v11 Control Category 01: Access Control'
-      implementation_guidance: Implement comprehensive access management
-      key_activities:
-      - User provisioning
-      - Access reviews
-      - Privilege management
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.a
-      name: Access Control Policy
+      name: 01.a - Access Control Policy
       description: 'HITRUST CSF v11 Control 01.a: Access Control Policy'
       typical_evidence: Documentation demonstrating implementation of Access Control Policy
-      implementation_actions:
-      - Develop comprehensive access control policy
-      - Define user access requirements
-      - Establish access control procedures
-      - Review and update policy annually
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -249,14 +193,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.b
-      name: User Registration and De-registration
+      name: 01.b - User Registration and De-registration
       description: 'HITRUST CSF v11 Control 01.b: User Registration and De-registration'
       typical_evidence: Documentation demonstrating implementation of User Registration and De-registration
-      implementation_actions:
-      - Implement user provisioning process
-      - Define user registration procedures
-      - Establish de-registration process
-      - Maintain user access records
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -265,14 +204,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.c
-      name: Privilege Management
+      name: 01.c - Privilege Management
       description: 'HITRUST CSF v11 Control 01.c: Privilege Management'
       typical_evidence: Documentation demonstrating implementation of Privilege Management
-      implementation_actions:
-      - Implement privileged access management
-      - Review privileged accounts quarterly
-      - Monitor privileged access usage
-      - Enforce principle of least privilege
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -281,14 +215,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.d
-      name: User Password Management
+      name: 01.d - User Password Management
       description: 'HITRUST CSF v11 Control 01.d: User Password Management'
       typical_evidence: Documentation demonstrating implementation of User Password Management
-      implementation_actions:
-      - Establish password policy requirements
-      - Implement password complexity rules
-      - Enforce password rotation schedule
-      - Deploy password management tools
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -297,14 +226,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.e
-      name: Access Rights Review
+      name: 01.e - Access Rights Review
       description: 'HITRUST CSF v11 Control 01.e: Access Rights Review'
       typical_evidence: Documentation demonstrating implementation of Access Rights Review
-      implementation_actions:
-      - Conduct periodic access rights reviews
-      - Document review findings
-      - Remediate inappropriate access
-      - Maintain review records
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -313,14 +237,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.f
-      name: Removal of Access Rights
+      name: 01.f - Removal of Access Rights
       description: 'HITRUST CSF v11 Control 01.f: Removal of Access Rights'
       typical_evidence: Documentation demonstrating implementation of Removal of Access Rights
-      implementation_actions:
-      - Implement Removal of Access Rights
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -329,14 +248,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.g
-      name: Use of Secret Authentication Information
+      name: 01.g - Use of Secret Authentication Information
       description: 'HITRUST CSF v11 Control 01.g: Use of Secret Authentication Information'
       typical_evidence: Documentation demonstrating implementation of Use of Secret Authentication Information
-      implementation_actions:
-      - Implement Use of Secret Authentication Information
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -345,14 +259,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
       ref_id: 01.h
-      name: Secure Log-on Procedures
+      name: 01.h - Secure Log-on Procedures
       description: 'HITRUST CSF v11 Control 01.h: Secure Log-on Procedures'
       typical_evidence: Documentation demonstrating implementation of Secure Log-on Procedures
-      implementation_actions:
-      - Implement Secure Log-on Procedures
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-08
@@ -360,26 +269,16 @@ objects:
       assessable: false
       depth: 1
       ref_id: '02'
-      name: Risk Management
+      name: 02 - Risk Management
       description: 'HITRUST CSF v11 Control Category 02: Risk Management'
-      implementation_guidance: Develop risk management framework
-      key_activities:
-      - Risk assessment
-      - Treatment planning
-      - Monitoring
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
       ref_id: 02.a
-      name: Risk Assessment Methodology
+      name: 02.a - Risk Assessment Methodology
       description: 'HITRUST CSF v11 Control 02.a: Risk Assessment Methodology'
       typical_evidence: Documentation demonstrating implementation of Risk Assessment Methodology
-      implementation_actions:
-      - Develop risk assessment methodology
-      - Define risk criteria and thresholds
-      - Establish risk assessment schedule
-      - Train staff on risk assessment
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
@@ -388,14 +287,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
       ref_id: 02.b
-      name: Risk Treatment
+      name: 02.b - Risk Treatment
       description: 'HITRUST CSF v11 Control 02.b: Risk Treatment'
       typical_evidence: Documentation demonstrating implementation of Risk Treatment
-      implementation_actions:
-      - Define risk treatment options
-      - Develop risk treatment plans
-      - Implement risk mitigation controls
-      - Monitor treatment effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
@@ -404,14 +298,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
       ref_id: 02.c
-      name: Information Security Risk Assessment
+      name: 02.c - Information Security Risk Assessment
       description: 'HITRUST CSF v11 Control 02.c: Information Security Risk Assessment'
       typical_evidence: Documentation demonstrating implementation of Information Security Risk Assessment
-      implementation_actions:
-      - Conduct information security risk assessments
-      - Identify threats and vulnerabilities
-      - Evaluate risk likelihood and impact
-      - Document assessment results
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
@@ -420,14 +309,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
       ref_id: 02.d
-      name: Risk Acceptance
+      name: 02.d - Risk Acceptance
       description: 'HITRUST CSF v11 Control 02.d: Risk Acceptance'
       typical_evidence: Documentation demonstrating implementation of Risk Acceptance
-      implementation_actions:
-      - Establish risk acceptance criteria
-      - Document risk acceptance decisions
-      - Obtain management approval for accepted risks
-      - Review accepted risks periodically
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
@@ -436,14 +320,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
       ref_id: 02.e
-      name: Risk Re-assessment
+      name: 02.e - Risk Re-assessment
       description: 'HITRUST CSF v11 Control 02.e: Risk Re-assessment'
       typical_evidence: Documentation demonstrating implementation of Risk Re-assessment
-      implementation_actions:
-      - Schedule periodic risk re-assessments
-      - Review risk landscape changes
-      - Update risk register
-      - Communicate risk status to management
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
@@ -452,14 +331,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
       ref_id: 02.f
-      name: Information Risk Management Program
+      name: 02.f - Information Risk Management Program
       description: 'HITRUST CSF v11 Control 02.f: Information Risk Management Program'
       typical_evidence: Documentation demonstrating implementation of Information Risk Management Program
-      implementation_actions:
-      - Implement Information Risk Management Program
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
@@ -467,26 +341,16 @@ objects:
       assessable: false
       depth: 1
       ref_id: '03'
-      name: Human Resources Security
+      name: 03 - Human Resources Security
       description: 'HITRUST CSF v11 Control Category 03: Human Resources Security'
-      implementation_guidance: Secure human resources lifecycle
-      key_activities:
-      - Background checks
-      - Training
-      - Termination procedures
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
       ref_id: 03.a
-      name: Background Verification
+      name: 03.a - Background Verification
       description: 'HITRUST CSF v11 Control 03.a: Background Verification'
       typical_evidence: Documentation demonstrating implementation of Background Verification
-      implementation_actions:
-      - Implement Background Verification
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.b
@@ -494,14 +358,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
       ref_id: 03.b
-      name: Terms and Conditions of Employment
+      name: 03.b - Terms and Conditions of Employment
       description: 'HITRUST CSF v11 Control 03.b: Terms and Conditions of Employment'
       typical_evidence: Documentation demonstrating implementation of Terms and Conditions of Employment
-      implementation_actions:
-      - Implement Terms and Conditions of Employment
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.c
@@ -509,14 +368,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
       ref_id: 03.c
-      name: Information Security Awareness Training
+      name: 03.c - Information Security Awareness Training
       description: 'HITRUST CSF v11 Control 03.c: Information Security Awareness Training'
       typical_evidence: Documentation demonstrating implementation of Information Security Awareness Training
-      implementation_actions:
-      - Implement Information Security Awareness Training
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.d
@@ -524,14 +378,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
       ref_id: 03.d
-      name: Disciplinary Process
+      name: 03.d - Disciplinary Process
       description: 'HITRUST CSF v11 Control 03.d: Disciplinary Process'
       typical_evidence: Documentation demonstrating implementation of Disciplinary Process
-      implementation_actions:
-      - Implement Disciplinary Process
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.e
@@ -539,40 +388,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
       ref_id: 03.e
-      name: Termination Responsibilities
+      name: 03.e - Termination Responsibilities
       description: 'HITRUST CSF v11 Control 03.e: Termination Responsibilities'
       typical_evidence: Documentation demonstrating implementation of Termination Responsibilities
-      implementation_actions:
-      - Implement Termination Responsibilities
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-05
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       assessable: false
       depth: 1
       ref_id: '04'
-      name: Physical and Environmental Security
+      name: 04 - Physical and Environmental Security
       description: 'HITRUST CSF v11 Control Category 04: Physical and Environmental Security'
-      implementation_guidance: Protect physical environments
-      key_activities:
-      - Perimeter security
-      - Access controls
-      - Environmental protection
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       ref_id: 04.a
-      name: Physical Security Perimeter
+      name: 04.a - Physical Security Perimeter
       description: 'HITRUST CSF v11 Control 04.a: Physical Security Perimeter'
       typical_evidence: Documentation demonstrating implementation of Physical Security Perimeter
-      implementation_actions:
-      - Implement Physical Security Perimeter
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-04
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.b
@@ -580,14 +414,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       ref_id: 04.b
-      name: Physical Entry Controls
+      name: 04.b - Physical Entry Controls
       description: 'HITRUST CSF v11 Control 04.b: Physical Entry Controls'
       typical_evidence: Documentation demonstrating implementation of Physical Entry Controls
-      implementation_actions:
-      - Implement Physical Entry Controls
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-04
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.c
@@ -595,14 +424,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       ref_id: 04.c
-      name: Securing Offices, Rooms and Facilities
+      name: 04.c - Securing Offices, Rooms and Facilities
       description: 'HITRUST CSF v11 Control 04.c: Securing Offices, Rooms and Facilities'
       typical_evidence: Documentation demonstrating implementation of Securing Offices, Rooms and Facilities
-      implementation_actions:
-      - Implement Securing Offices, Rooms and Facilities
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-04
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.d
@@ -610,14 +434,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       ref_id: 04.d
-      name: External and Environmental Threats
+      name: 04.d - External and Environmental Threats
       description: 'HITRUST CSF v11 Control 04.d: External and Environmental Threats'
       typical_evidence: Documentation demonstrating implementation of External and Environmental Threats
-      implementation_actions:
-      - Implement External and Environmental Threats
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-04
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.e
@@ -625,14 +444,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       ref_id: 04.e
-      name: Equipment Siting and Protection
+      name: 04.e - Equipment Siting and Protection
       description: 'HITRUST CSF v11 Control 04.e: Equipment Siting and Protection'
       typical_evidence: Documentation demonstrating implementation of Equipment Siting and Protection
-      implementation_actions:
-      - Implement Equipment Siting and Protection
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-04
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.f
@@ -640,40 +454,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
       ref_id: 04.f
-      name: Supporting Utilities
+      name: 04.f - Supporting Utilities
       description: 'HITRUST CSF v11 Control 04.f: Supporting Utilities'
       typical_evidence: Documentation demonstrating implementation of Supporting Utilities
-      implementation_actions:
-      - Implement Supporting Utilities
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-04
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       assessable: false
       depth: 1
       ref_id: '05'
-      name: Communications and Operations Management
+      name: 05 - Communications and Operations Management
       description: 'HITRUST CSF v11 Control Category 05: Communications and Operations Management'
-      implementation_guidance: Manage IT operations securely
-      key_activities:
-      - Change management
-      - Backup procedures
-      - Network security
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.a
-      name: Operational Procedures and Responsibilities
+      name: 05.a - Operational Procedures and Responsibilities
       description: 'HITRUST CSF v11 Control 05.a: Operational Procedures and Responsibilities'
       typical_evidence: Documentation demonstrating implementation of Operational Procedures and Responsibilities
-      implementation_actions:
-      - Implement Operational Procedures and Responsibilities
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -682,14 +481,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.b
-      name: Change Management
+      name: 05.b - Change Management
       description: 'HITRUST CSF v11 Control 05.b: Change Management'
       typical_evidence: Documentation demonstrating implementation of Change Management
-      implementation_actions:
-      - Implement Change Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -698,14 +492,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.c
-      name: Capacity Management
+      name: 05.c - Capacity Management
       description: 'HITRUST CSF v11 Control 05.c: Capacity Management'
       typical_evidence: Documentation demonstrating implementation of Capacity Management
-      implementation_actions:
-      - Implement Capacity Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -714,14 +503,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.d
-      name: Malware Protection
+      name: 05.d - Malware Protection
       description: 'HITRUST CSF v11 Control 05.d: Malware Protection'
       typical_evidence: Documentation demonstrating implementation of Malware Protection
-      implementation_actions:
-      - Implement Malware Protection
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -730,14 +514,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.e
-      name: Data Backup
+      name: 05.e - Data Backup
       description: 'HITRUST CSF v11 Control 05.e: Data Backup'
       typical_evidence: Documentation demonstrating implementation of Data Backup
-      implementation_actions:
-      - Implement Data Backup
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -746,14 +525,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.f
-      name: Network Security Management
+      name: 05.f - Network Security Management
       description: 'HITRUST CSF v11 Control 05.f: Network Security Management'
       typical_evidence: Documentation demonstrating implementation of Network Security Management
-      implementation_actions:
-      - Implement Network Security Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -762,14 +536,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.g
-      name: Media Handling
+      name: 05.g - Media Handling
       description: 'HITRUST CSF v11 Control 05.g: Media Handling'
       typical_evidence: Documentation demonstrating implementation of Media Handling
-      implementation_actions:
-      - Implement Media Handling
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -778,14 +547,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
       ref_id: 05.h
-      name: Exchange of Information
+      name: 05.h - Exchange of Information
       description: 'HITRUST CSF v11 Control 05.h: Exchange of Information'
       typical_evidence: Documentation demonstrating implementation of Exchange of Information
-      implementation_actions:
-      - Implement Exchange of Information
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -793,26 +557,16 @@ objects:
       assessable: false
       depth: 1
       ref_id: '06'
-      name: Systems Acquisition, Development and Maintenance
+      name: 06 - Systems Acquisition, Development and Maintenance
       description: 'HITRUST CSF v11 Control Category 06: Systems Acquisition, Development and Maintenance'
-      implementation_guidance: Secure development lifecycle
-      key_activities:
-      - Security requirements
-      - Testing
-      - Change control
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
       ref_id: 06.a
-      name: Security Requirements Analysis
+      name: 06.a - Security Requirements Analysis
       description: 'HITRUST CSF v11 Control 06.a: Security Requirements Analysis'
       typical_evidence: Documentation demonstrating implementation of Security Requirements Analysis
-      implementation_actions:
-      - Implement Security Requirements Analysis
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -821,14 +575,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
       ref_id: 06.b
-      name: Secure Development Policy
+      name: 06.b - Secure Development Policy
       description: 'HITRUST CSF v11 Control 06.b: Secure Development Policy'
       typical_evidence: Documentation demonstrating implementation of Secure Development Policy
-      implementation_actions:
-      - Implement Secure Development Policy
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -837,14 +586,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
       ref_id: 06.c
-      name: System Testing and Acceptance
+      name: 06.c - System Testing and Acceptance
       description: 'HITRUST CSF v11 Control 06.c: System Testing and Acceptance'
       typical_evidence: Documentation demonstrating implementation of System Testing and Acceptance
-      implementation_actions:
-      - Implement System Testing and Acceptance
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -853,14 +597,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
       ref_id: 06.d
-      name: Protection of Test Data
+      name: 06.d - Protection of Test Data
       description: 'HITRUST CSF v11 Control 06.d: Protection of Test Data'
       typical_evidence: Documentation demonstrating implementation of Protection of Test Data
-      implementation_actions:
-      - Implement Protection of Test Data
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -869,14 +608,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
       ref_id: 06.e
-      name: Change Control Procedures
+      name: 06.e - Change Control Procedures
       description: 'HITRUST CSF v11 Control 06.e: Change Control Procedures'
       typical_evidence: Documentation demonstrating implementation of Change Control Procedures
-      implementation_actions:
-      - Implement Change Control Procedures
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-02
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
@@ -884,26 +618,16 @@ objects:
       assessable: false
       depth: 1
       ref_id: '07'
-      name: Incident Management
+      name: 07 - Incident Management
       description: 'HITRUST CSF v11 Control Category 07: Incident Management'
-      implementation_guidance: Establish incident response capability
-      key_activities:
-      - Detection
-      - Response procedures
-      - Evidence collection
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
       ref_id: 07.a
-      name: Information Security Events Reporting
+      name: 07.a - Information Security Events Reporting
       description: 'HITRUST CSF v11 Control 07.a: Information Security Events Reporting'
       typical_evidence: Documentation demonstrating implementation of Information Security Events Reporting
-      implementation_actions:
-      - Implement Information Security Events Reporting
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.b
@@ -911,14 +635,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
       ref_id: 07.b
-      name: Information Security Incidents Assessment
+      name: 07.b - Information Security Incidents Assessment
       description: 'HITRUST CSF v11 Control 07.b: Information Security Incidents Assessment'
       typical_evidence: Documentation demonstrating implementation of Information Security Incidents Assessment
-      implementation_actions:
-      - Implement Information Security Incidents Assessment
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.c
@@ -926,14 +645,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
       ref_id: 07.c
-      name: Information Security Incidents Response
+      name: 07.c - Information Security Incidents Response
       description: 'HITRUST CSF v11 Control 07.c: Information Security Incidents Response'
       typical_evidence: Documentation demonstrating implementation of Information Security Incidents Response
-      implementation_actions:
-      - Implement Information Security Incidents Response
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.d
@@ -941,14 +655,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
       ref_id: 07.d
-      name: Learning from Incidents
+      name: 07.d - Learning from Incidents
       description: 'HITRUST CSF v11 Control 07.d: Learning from Incidents'
       typical_evidence: Documentation demonstrating implementation of Learning from Incidents
-      implementation_actions:
-      - Implement Learning from Incidents
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.e
@@ -956,40 +665,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
       ref_id: 07.e
-      name: Collection of Evidence
+      name: 07.e - Collection of Evidence
       description: 'HITRUST CSF v11 Control 07.e: Collection of Evidence'
       typical_evidence: Documentation demonstrating implementation of Collection of Evidence
-      implementation_actions:
-      - Implement Collection of Evidence
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-09
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
       assessable: false
       depth: 1
       ref_id: 08
-      name: Business Continuity and Disaster Recovery
+      name: 08 - Business Continuity and Disaster Recovery
       description: 'HITRUST CSF v11 Control Category 08: Business Continuity and Disaster Recovery'
-      implementation_guidance: Ensure business continuity
-      key_activities:
-      - BIA
-      - Continuity planning
-      - Testing
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
       ref_id: 08.a
-      name: Business Continuity Policy
+      name: 08.a - Business Continuity Policy
       description: 'HITRUST CSF v11 Control 08.a: Business Continuity Policy'
       typical_evidence: Documentation demonstrating implementation of Business Continuity Policy
-      implementation_actions:
-      - Implement Business Continuity Policy
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-10
@@ -998,14 +692,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
       ref_id: 08.b
-      name: Business Impact Analysis
+      name: 08.b - Business Impact Analysis
       description: 'HITRUST CSF v11 Control 08.b: Business Impact Analysis'
       typical_evidence: Documentation demonstrating implementation of Business Impact Analysis
-      implementation_actions:
-      - Implement Business Impact Analysis
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-10
@@ -1014,14 +703,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
       ref_id: 08.c
-      name: Developing Business Continuity Plans
+      name: 08.c - Developing Business Continuity Plans
       description: 'HITRUST CSF v11 Control 08.c: Developing Business Continuity Plans'
       typical_evidence: Documentation demonstrating implementation of Developing Business Continuity Plans
-      implementation_actions:
-      - Implement Developing Business Continuity Plans
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-10
@@ -1030,14 +714,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
       ref_id: 08.d
-      name: Business Continuity Testing
+      name: 08.d - Business Continuity Testing
       description: 'HITRUST CSF v11 Control 08.d: Business Continuity Testing'
       typical_evidence: Documentation demonstrating implementation of Business Continuity Testing
-      implementation_actions:
-      - Implement Business Continuity Testing
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-10
@@ -1046,14 +725,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
       ref_id: 08.e
-      name: Business Continuity Plan Maintenance
+      name: 08.e - Business Continuity Plan Maintenance
       description: 'HITRUST CSF v11 Control 08.e: Business Continuity Plan Maintenance'
       typical_evidence: Documentation demonstrating implementation of Business Continuity Plan Maintenance
-      implementation_actions:
-      - Implement Business Continuity Plan Maintenance
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-03
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-10
@@ -1061,26 +735,16 @@ objects:
       assessable: false
       depth: 1
       ref_id: 09
-      name: Compliance
+      name: 09 - Compliance
       description: 'HITRUST CSF v11 Control Category 09: Compliance'
-      implementation_guidance: Maintain compliance posture
-      key_activities:
-      - Legal requirements
-      - Auditing
-      - Monitoring
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
       ref_id: 09.a
-      name: Identification of Applicable Legislation
+      name: 09.a - Identification of Applicable Legislation
       description: 'HITRUST CSF v11 Control 09.a: Identification of Applicable Legislation'
       typical_evidence: Documentation demonstrating implementation of Identification of Applicable Legislation
-      implementation_actions:
-      - Implement Identification of Applicable Legislation
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-11
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.b
@@ -1088,14 +752,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
       ref_id: 09.b
-      name: Compliance with Legal Requirements
+      name: 09.b - Compliance with Legal Requirements
       description: 'HITRUST CSF v11 Control 09.b: Compliance with Legal Requirements'
       typical_evidence: Documentation demonstrating implementation of Compliance with Legal Requirements
-      implementation_actions:
-      - Implement Compliance with Legal Requirements
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-11
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.c
@@ -1103,14 +762,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
       ref_id: 09.c
-      name: Compliance with Security Policies
+      name: 09.c - Compliance with Security Policies
       description: 'HITRUST CSF v11 Control 09.c: Compliance with Security Policies'
       typical_evidence: Documentation demonstrating implementation of Compliance with Security Policies
-      implementation_actions:
-      - Implement Compliance with Security Policies
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-11
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.d
@@ -1118,14 +772,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
       ref_id: 09.d
-      name: Technical Compliance Checking
+      name: 09.d - Technical Compliance Checking
       description: 'HITRUST CSF v11 Control 09.d: Technical Compliance Checking'
       typical_evidence: Documentation demonstrating implementation of Technical Compliance Checking
-      implementation_actions:
-      - Implement Technical Compliance Checking
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-11
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.e
@@ -1133,40 +782,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
       ref_id: 09.e
-      name: Information Security Audit
+      name: 09.e - Information Security Audit
       description: 'HITRUST CSF v11 Control 09.e: Information Security Audit'
       typical_evidence: Documentation demonstrating implementation of Information Security Audit
-      implementation_actions:
-      - Implement Information Security Audit
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-11
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
       assessable: false
       depth: 1
       ref_id: '10'
-      name: Privacy
+      name: 10 - Privacy
       description: 'HITRUST CSF v11 Control Category 10: Privacy'
-      implementation_guidance: Protect privacy and personal data
-      key_activities:
-      - Privacy assessments
-      - Consent management
-      - Data handling
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
       ref_id: 10.a
-      name: Privacy Policy
+      name: 10.a - Privacy Policy
       description: 'HITRUST CSF v11 Control 10.a: Privacy Policy'
       typical_evidence: Documentation demonstrating implementation of Privacy Policy
-      implementation_actions:
-      - Implement Privacy Policy
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-12
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.b
@@ -1174,14 +808,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
       ref_id: 10.b
-      name: Privacy Impact Assessment
+      name: 10.b - Privacy Impact Assessment
       description: 'HITRUST CSF v11 Control 10.b: Privacy Impact Assessment'
       typical_evidence: Documentation demonstrating implementation of Privacy Impact Assessment
-      implementation_actions:
-      - Implement Privacy Impact Assessment
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-12
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.c
@@ -1189,14 +818,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
       ref_id: 10.c
-      name: Data Subject Rights
+      name: 10.c - Data Subject Rights
       description: 'HITRUST CSF v11 Control 10.c: Data Subject Rights'
       typical_evidence: Documentation demonstrating implementation of Data Subject Rights
-      implementation_actions:
-      - Implement Data Subject Rights
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-12
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.d
@@ -1204,14 +828,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
       ref_id: 10.d
-      name: Consent Management
+      name: 10.d - Consent Management
       description: 'HITRUST CSF v11 Control 10.d: Consent Management'
       typical_evidence: Documentation demonstrating implementation of Consent Management
-      implementation_actions:
-      - Implement Consent Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-12
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.e
@@ -1219,40 +838,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
       ref_id: 10.e
-      name: Data Retention and Disposal
+      name: 10.e - Data Retention and Disposal
       description: 'HITRUST CSF v11 Control 10.e: Data Retention and Disposal'
       typical_evidence: Documentation demonstrating implementation of Data Retention and Disposal
-      implementation_actions:
-      - Implement Data Retention and Disposal
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-12
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
       assessable: false
       depth: 1
       ref_id: '11'
-      name: Network Security
+      name: 11 - Network Security
       description: 'HITRUST CSF v11 Control Category 11: Network Security'
-      implementation_guidance: Secure network infrastructure
-      key_activities:
-      - Segmentation
-      - Access control
-      - Monitoring
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
       ref_id: 11.a
-      name: Network Controls
+      name: 11.a - Network Controls
       description: 'HITRUST CSF v11 Control 11.a: Network Controls'
       typical_evidence: Documentation demonstrating implementation of Network Controls
-      implementation_actions:
-      - Implement Network Controls
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-06
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.b
@@ -1260,14 +864,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
       ref_id: 11.b
-      name: Network Segmentation
+      name: 11.b - Network Segmentation
       description: 'HITRUST CSF v11 Control 11.b: Network Segmentation'
       typical_evidence: Documentation demonstrating implementation of Network Segmentation
-      implementation_actions:
-      - Implement Network Segmentation
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-06
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.c
@@ -1275,14 +874,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
       ref_id: 11.c
-      name: Network Connection Control
+      name: 11.c - Network Connection Control
       description: 'HITRUST CSF v11 Control 11.c: Network Connection Control'
       typical_evidence: Documentation demonstrating implementation of Network Connection Control
-      implementation_actions:
-      - Implement Network Connection Control
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-06
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.d
@@ -1290,14 +884,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
       ref_id: 11.d
-      name: Remote Access Management
+      name: 11.d - Remote Access Management
       description: 'HITRUST CSF v11 Control 11.d: Remote Access Management'
       typical_evidence: Documentation demonstrating implementation of Remote Access Management
-      implementation_actions:
-      - Implement Remote Access Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-06
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.e
@@ -1305,40 +894,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
       ref_id: 11.e
-      name: Network Monitoring
+      name: 11.e - Network Monitoring
       description: 'HITRUST CSF v11 Control 11.e: Network Monitoring'
       typical_evidence: Documentation demonstrating implementation of Network Monitoring
-      implementation_actions:
-      - Implement Network Monitoring
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-06
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
       assessable: false
       depth: 1
       ref_id: '12'
-      name: Application Security
+      name: 12 - Application Security
       description: 'HITRUST CSF v11 Control Category 12: Application Security'
-      implementation_guidance: Protect applications
-      key_activities:
-      - Input validation
-      - Session management
-      - Error handling
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
       ref_id: 12.a
-      name: Application Security Policy
+      name: 12.a - Application Security Policy
       description: 'HITRUST CSF v11 Control 12.a: Application Security Policy'
       typical_evidence: Documentation demonstrating implementation of Application Security Policy
-      implementation_actions:
-      - Implement Application Security Policy
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-13
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.b
@@ -1346,14 +920,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
       ref_id: 12.b
-      name: Input Validation
+      name: 12.b - Input Validation
       description: 'HITRUST CSF v11 Control 12.b: Input Validation'
       typical_evidence: Documentation demonstrating implementation of Input Validation
-      implementation_actions:
-      - Implement Input Validation
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-13
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.c
@@ -1361,14 +930,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
       ref_id: 12.c
-      name: Output Validation
+      name: 12.c - Output Validation
       description: 'HITRUST CSF v11 Control 12.c: Output Validation'
       typical_evidence: Documentation demonstrating implementation of Output Validation
-      implementation_actions:
-      - Implement Output Validation
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-13
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.d
@@ -1376,14 +940,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
       ref_id: 12.d
-      name: Session Management
+      name: 12.d - Session Management
       description: 'HITRUST CSF v11 Control 12.d: Session Management'
       typical_evidence: Documentation demonstrating implementation of Session Management
-      implementation_actions:
-      - Implement Session Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-13
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.e
@@ -1391,40 +950,25 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
       ref_id: 12.e
-      name: Error Handling
+      name: 12.e - Error Handling
       description: 'HITRUST CSF v11 Control 12.e: Error Handling'
       typical_evidence: Documentation demonstrating implementation of Error Handling
-      implementation_actions:
-      - Implement Error Handling
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-13
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
       assessable: false
       depth: 1
       ref_id: '13'
-      name: Endpoint Protection
+      name: 13 - Endpoint Protection
       description: 'HITRUST CSF v11 Control Category 13: Endpoint Protection'
-      implementation_guidance: Secure endpoints
-      key_activities:
-      - Device management
-      - Protection software
-      - Encryption
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.a
       assessable: true
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
       ref_id: 13.a
-      name: Endpoint Protection Policy
+      name: 13.a - Endpoint Protection Policy
       description: 'HITRUST CSF v11 Control 13.a: Endpoint Protection Policy'
       typical_evidence: Documentation demonstrating implementation of Endpoint Protection Policy
-      implementation_actions:
-      - Implement Endpoint Protection Policy
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-14
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.b
@@ -1432,14 +976,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
       ref_id: 13.b
-      name: Mobile Device Management
+      name: 13.b - Mobile Device Management
       description: 'HITRUST CSF v11 Control 13.b: Mobile Device Management'
       typical_evidence: Documentation demonstrating implementation of Mobile Device Management
-      implementation_actions:
-      - Implement Mobile Device Management
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-14
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.c
@@ -1447,14 +986,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
       ref_id: 13.c
-      name: Removable Media Controls
+      name: 13.c - Removable Media Controls
       description: 'HITRUST CSF v11 Control 13.c: Removable Media Controls'
       typical_evidence: Documentation demonstrating implementation of Removable Media Controls
-      implementation_actions:
-      - Implement Removable Media Controls
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-14
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.d
@@ -1462,14 +996,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
       ref_id: 13.d
-      name: Endpoint Detection and Response
+      name: 13.d - Endpoint Detection and Response
       description: 'HITRUST CSF v11 Control 13.d: Endpoint Detection and Response'
       typical_evidence: Documentation demonstrating implementation of Endpoint Detection and Response
-      implementation_actions:
-      - Implement Endpoint Detection and Response
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-14
     - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.e
@@ -1477,14 +1006,9 @@ objects:
       depth: 2
       parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
       ref_id: 13.e
-      name: Device Encryption
+      name: 13.e - Device Encryption
       description: 'HITRUST CSF v11 Control 13.e: Device Encryption'
       typical_evidence: Documentation demonstrating implementation of Device Encryption
-      implementation_actions:
-      - Implement Device Encryption
-      - Document control procedures
-      - Conduct periodic reviews
-      - Monitor control effectiveness
       reference_controls:
       - urn:intuitem:risk:reference_control:hitrust-csf-v11:RC-14
   risk_matrix:
