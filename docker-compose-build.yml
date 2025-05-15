@@ -6,9 +6,11 @@ services:
       dockerfile: Dockerfile
     restart: always
     environment:
-      - ALLOWED_HOSTS=backend,localhost
-      - CISO_ASSISTANT_URL=https://localhost:8443
-      - DJANGO_DEBUG=True
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS:-backend,localhost}
+      - CISO_ASSISTANT_URL=${CISO_ASSISTANT_URL:-https://localhost:8443}
+      - DJANGO_DEBUG=${DJANGO_DEBUG:-True}
+      - DJANGO_SUPERUSER_EMAIL=${DJANGO_SUPERUSER_EMAIL:-admin@pestle.in}
+      - DJANGO_SUPERUSER_PASSWORD=${DJANGO_SUPERUSER_PASSWORD:-admin123}
     volumes:
       - ./db:/code/db
 
@@ -21,9 +23,9 @@ services:
       - backend
     restart: always
     environment:
-      - ALLOWED_HOSTS=backend,localhost
-      - CISO_ASSISTANT_URL=https://localhost:8443
-      - DJANGO_DEBUG=False
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS:-backend,localhost}
+      - CISO_ASSISTANT_URL=${CISO_ASSISTANT_URL:-https://localhost:8443}
+      - DJANGO_DEBUG=${DJANGO_DEBUG:-False}
     volumes:
       - ./db:/code/db
     entrypoint:
@@ -35,10 +37,10 @@ services:
   frontend:
     container_name: frontend
     environment:
-      - PUBLIC_BACKEND_API_URL=http://backend:8000/api
-      - PUBLIC_BACKEND_API_EXPOSED_URL=https://localhost:8443/api
-      - PROTOCOL_HEADER=x-forwarded-proto
-      - HOST_HEADER=x-forwarded-host
+      - PUBLIC_BACKEND_API_URL=${PUBLIC_BACKEND_API_URL:-http://backend:8000/api}
+      - PUBLIC_BACKEND_API_EXPOSED_URL=${PUBLIC_BACKEND_API_EXPOSED_URL:-https://localhost:8443/api}
+      - PROTOCOL_HEADER=${PROTOCOL_HEADER:-x-forwarded-proto}
+      - HOST_HEADER=${HOST_HEADER:-x-forwarded-host}
 
     build:
       context: ./frontend
@@ -50,7 +52,7 @@ services:
     container_name: caddy
     image: caddy:2.8.4
     environment:
-      - CISO_ASSISTANT_URL=https://localhost:8443
+      - CISO_ASSISTANT_URL=${CISO_ASSISTANT_URL:-https://localhost:8443}
     restart: unless-stopped
     ports:
       - 8443:8443

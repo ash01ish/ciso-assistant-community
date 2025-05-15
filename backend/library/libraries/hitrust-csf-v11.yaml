@@ -1,0 +1,1758 @@
+urn: urn:intuitem:risk:library:hitrust-csf-v11
+locale: en
+ref_id: HITRUST-CSF-v11
+name: HITRUST CSF v11
+description: HITRUST Common Security Framework (CSF) version 11
+copyright: "\xA9 2024 HITRUST Alliance"
+version: 11
+publication_date: 2025-05-15
+provider: HITRUST Alliance
+packager: intuitem
+objects:
+  reference_controls:
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-01
+    ref_id: RC-01
+    name: Policy Controls
+    category: policy
+    description: Organizational policies and procedures
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-02
+    ref_id: RC-02
+    name: Access Controls
+    category: technical
+    description: Access management and authentication
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-03
+    ref_id: RC-03
+    name: Human Resources Controls
+    category: process
+    description: Personnel security controls
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-04
+    ref_id: RC-04
+    name: Risk Management Controls
+    category: process
+    description: Risk assessment and treatment
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-05
+    ref_id: RC-05
+    name: Asset Management Controls
+    category: process
+    description: Asset inventory and classification
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-06
+    ref_id: RC-06
+    name: Physical Security Controls
+    category: physical
+    description: Physical and environmental security
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-07
+    ref_id: RC-07
+    name: Operations Controls
+    category: technical
+    description: Operational procedures and controls
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-08
+    ref_id: RC-08
+    name: Logging and Monitoring Controls
+    category: technical
+    description: Security event logging and monitoring
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-09
+    ref_id: RC-09
+    name: Network Security Controls
+    category: technical
+    description: Network protection measures
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-10
+    ref_id: RC-10
+    name: System Development Controls
+    category: process
+    description: Secure development lifecycle
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-11
+    ref_id: RC-11
+    name: Incident Response Controls
+    category: process
+    description: Incident management procedures
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-12
+    ref_id: RC-12
+    name: Business Continuity Controls
+    category: process
+    description: Continuity planning and testing
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-13
+    ref_id: RC-13
+    name: Compliance Controls
+    category: process
+    description: Legal and regulatory compliance
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-14
+    ref_id: RC-14
+    name: Mobile Security Controls
+    category: technical
+    description: Mobile device protection
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-15
+    ref_id: RC-15
+    name: Supplier Management Controls
+    category: process
+    description: Third-party risk management
+  - urn: urn:intuitem:risk:reference_control:hitrust-csf-v11:rc-16
+    ref_id: RC-16
+    name: Cloud Security Controls
+    category: technical
+    description: Cloud-specific security measures
+  framework:
+    urn: urn:intuitem:risk:framework:hitrust-csf-v11
+    ref_id: HITRUST-CSF-v11
+    name: HITRUST CSF v11
+    description: HITRUST Common Security Framework version 11
+    scores_definition:
+    - score: 1
+      name: Policy
+      description: Control requirement is documented in policies
+    - score: 2
+      name: Procedure
+      description: Procedures are documented and implemented
+    - score: 3
+      name: Implemented
+      description: Control is fully implemented
+    - score: 4
+      name: Tested
+      description: Control effectiveness is tested
+    - score: 5
+      name: Managed
+      description: Control is managed and continuously improved
+    implementation_groups_definition:
+    - ref_id: IG1
+      name: Foundational
+      description: Basic implementation for smaller organizations
+    - ref_id: IG2
+      name: Managed
+      description: Enhanced controls for mid-size organizations
+    - ref_id: IG3
+      name: Advanced
+      description: Comprehensive controls for large organizations
+    requirement_nodes:
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      assessable: true
+      depth: 1
+      ref_id: '00'
+      name: 00 - Information Security Management Program
+      description: Control family for establishing and operating the information security
+        management program
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      ref_id: 00.a
+      name: 00.a - Information Security Policy
+      description: Establishment and maintenance of information security policies
+      annotation: These policies are aligned to the organizational business goals,
+        objectives and requirements and explicitly define the risk tolerance of senior
+        leadership
+      typical_evidence: Information security policy documentation, policy governance
+        structure
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      ref_id: 00.b
+      name: 00.b - Security Roles and Responsibilities
+      description: Definition of information security roles and responsibilities
+      typical_evidence: Role descriptions, organizational chart with security roles
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      ref_id: 00.c
+      name: 00.c - Information Security in Project Management
+      description: Addressing information security within project management
+      typical_evidence: Project security requirements, security gates documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      ref_id: 00.d
+      name: 00.d - Segregation of Duties
+      description: Appropriate segregation of duties to reduce risk
+      typical_evidence: Segregation matrix, role conflict analysis
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      ref_id: 00.e
+      name: 00.e - Contact with Authorities
+      description: Procedures for contacting relevant authorities
+      typical_evidence: Authority contact procedures, emergency contact lists
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:00
+      ref_id: 00.f
+      name: 00.f - Contact with Special Interest Groups
+      description: Maintaining contact with security groups and forums
+      typical_evidence: Membership documentation, interaction records
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      assessable: true
+      depth: 1
+      ref_id: '01'
+      name: 01 - Access Control
+      description: Control family for access management and control
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.a
+      name: 01.a - Access Control Policy
+      description: Access control policy based on business requirements
+      typical_evidence: Access control policy, access management procedures
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.b
+      name: 01.b - Access to Networks and Network Services
+      description: Control of access to networks and network services
+      typical_evidence: Network access controls documentation
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.c
+      name: 01.c - User Registration and De-registration
+      description: User account provisioning and deprovisioning
+      typical_evidence: User provisioning procedures, account logs
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.d
+      name: 01.d - User Access Provisioning
+      description: Authorization for access rights
+      typical_evidence: Access request forms, approval records
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.e
+      name: 01.e - Management of Privileged Access Rights
+      description: Control over privileged access
+      typical_evidence: Privileged access management procedures
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.f
+      name: 01.f - Review of User Access Rights
+      description: Periodic review of access rights
+      typical_evidence: Access review reports
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.g
+      name: 01.g - Removal or Adjustment of Access Rights
+      description: Timely adjustment of access rights
+      typical_evidence: Access revocation logs
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.h
+      name: 01.h - Use of Secret Authentication Information
+      description: Protection of authentication information
+      typical_evidence: Password policy, authentication guidelines
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.i
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.i
+      name: 01.i - Secure Log-on Procedures
+      description: Secure authentication procedures
+      typical_evidence: Authentication logs, MFA documentation
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.j
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.j
+      name: 01.j - Password Management System
+      description: System for managing passwords
+      typical_evidence: Password management system documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.k
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.k
+      name: 01.k - Use of Privileged Utility Programs
+      description: Control of system utilities
+      typical_evidence: Utility access logs
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.l
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.l
+      name: 01.l - Access Control to Program Source Code
+      description: Protection of source code
+      typical_evidence: Code repository access controls
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.m
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.m
+      name: 01.m - Information Access Restriction
+      description: Restriction based on access control policy
+      typical_evidence: Data access matrix
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01.n
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:01
+      ref_id: 01.n
+      name: 01.n - Sensitive System Isolation
+      description: Isolation of sensitive systems
+      typical_evidence: System isolation documentation
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      assessable: true
+      depth: 1
+      ref_id: '02'
+      name: 02 - Human Resources Security
+      description: Control family for personnel security
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      ref_id: 02.a
+      name: 02.a - Screening
+      description: Background verification checks
+      typical_evidence: Background check procedures
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      ref_id: 02.b
+      name: 02.b - Terms and Conditions of Employment
+      description: Employment agreements including security
+      typical_evidence: Employment contracts with security clauses
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      ref_id: 02.c
+      name: 02.c - Management Responsibilities
+      description: Management's role in security
+      typical_evidence: Management security responsibilities
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      ref_id: 02.d
+      name: 02.d - Information Security Awareness, Education, and Training
+      description: Security training programs
+      typical_evidence: Training materials and records
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      ref_id: 02.e
+      name: 02.e - Disciplinary Process
+      description: Process for security violations
+      typical_evidence: Disciplinary procedures
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:02
+      ref_id: 02.f
+      name: 02.f - Termination or Change of Employment
+      description: Procedures for employment changes
+      typical_evidence: Termination checklists
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
+      assessable: true
+      depth: 1
+      ref_id: '03'
+      name: 03 - Risk Management
+      description: Control family for risk management processes
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
+      ref_id: 03.a
+      name: 03.a - Risk Management Program
+      description: Formal risk management program
+      typical_evidence: Risk management framework documentation
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
+      ref_id: 03.b
+      name: 03.b - Risk Assessment
+      description: Regular risk assessments
+      typical_evidence: Risk assessment reports
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
+      ref_id: 03.c
+      name: 03.c - Risk Treatment
+      description: Risk treatment plans
+      typical_evidence: Risk treatment plans and tracking
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
+      ref_id: 03.d
+      name: 03.d - Risk Acceptance
+      description: Formal risk acceptance process
+      typical_evidence: Risk acceptance documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:03
+      ref_id: 03.e
+      name: 03.e - Risk Monitoring and Review
+      description: Ongoing monitoring of risks
+      typical_evidence: Risk monitoring reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      assessable: true
+      depth: 1
+      ref_id: '04'
+      name: 04 - Asset Management
+      description: Control family for asset management
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.a
+      name: 04.a - Inventory of Assets
+      description: Comprehensive asset inventory
+      typical_evidence: Asset inventory database
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.b
+      name: 04.b - Ownership of Assets
+      description: Assignment of asset ownership
+      typical_evidence: Asset ownership registry
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.c
+      name: 04.c - Acceptable Use of Assets
+      description: Rules for acceptable asset use
+      typical_evidence: Acceptable use policy
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.d
+      name: 04.d - Return of Assets
+      description: Asset return upon termination
+      typical_evidence: Asset return procedures
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.e
+      name: 04.e - Classification of Information
+      description: Information classification scheme
+      typical_evidence: Classification policy and labels
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.f
+      name: 04.f - Labeling of Information
+      description: Information labeling procedures
+      typical_evidence: Labeling standards
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:04
+      ref_id: 04.g
+      name: 04.g - Handling of Assets
+      description: Secure handling procedures
+      typical_evidence: Asset handling procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      assessable: true
+      depth: 1
+      ref_id: '05'
+      name: 05 - Physical and Environmental Security
+      description: Control family for physical security
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.a
+      name: 05.a - Physical Security Perimeter
+      description: Physical boundaries for security
+      typical_evidence: Facility floor plans with perimeters
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.b
+      name: 05.b - Physical Entry Controls
+      description: Physical access control systems
+      typical_evidence: Access logs, badge system documentation
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.c
+      name: 05.c - Securing Offices, Rooms, and Facilities
+      description: Physical security of work areas
+      typical_evidence: Physical security assessments
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.d
+      name: 05.d - Protecting Against External and Environmental Threats
+      description: Environmental protection measures
+      typical_evidence: Environmental controls documentation
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.e
+      name: 05.e - Working in Secure Areas
+      description: Procedures for secure areas
+      typical_evidence: Secure area procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.f
+      name: 05.f - Delivery and Loading Areas
+      description: Security of delivery areas
+      typical_evidence: Loading dock procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.g
+      name: 05.g - Siting and Protection of Equipment
+      description: Equipment placement and protection
+      typical_evidence: Equipment placement guidelines
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.h
+      name: 05.h - Supporting Utilities
+      description: Utility infrastructure protection
+      typical_evidence: Utility redundancy documentation
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.i
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.i
+      name: 05.i - Cabling Security
+      description: Protection of cabling
+      typical_evidence: Cabling diagrams and protection measures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.j
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.j
+      name: 05.j - Equipment Maintenance
+      description: Maintenance procedures
+      typical_evidence: Maintenance logs
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.k
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.k
+      name: 05.k - Removal of Assets
+      description: Control of asset removal
+      typical_evidence: Asset removal authorization logs
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.l
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.l
+      name: 05.l - Security of Equipment and Assets Off-premises
+      description: Off-site security measures
+      typical_evidence: Off-site security procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.m
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.m
+      name: 05.m - Secure Disposal or Reuse of Equipment
+      description: Secure disposal procedures
+      typical_evidence: Disposal certificates
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.n
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.n
+      name: 05.n - Unattended User Equipment
+      description: Protection of unattended equipment
+      typical_evidence: Screen lock policies
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05.o
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:05
+      ref_id: 05.o
+      name: 05.o - Clear Desk and Clear Screen Policy
+      description: Workspace security
+      typical_evidence: Clean desk policy
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      assessable: true
+      depth: 1
+      ref_id: '06'
+      name: 06 - Communications and Operations Management
+      description: Control family for operational security
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.a
+      name: 06.a - Documented Operating Procedures
+      description: Documentation of operating procedures
+      typical_evidence: Operating procedures, runbooks
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.b
+      name: 06.b - Change Management
+      description: Control of changes
+      typical_evidence: Change management records
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.c
+      name: 06.c - Capacity Management
+      description: Monitoring and managing capacity
+      typical_evidence: Capacity reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.d
+      name: 06.d - Separation of Development, Testing, and Operational Environments
+      description: Environment separation
+      typical_evidence: Environment architecture diagrams
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.e
+      name: 06.e - Protection from Malware
+      description: Anti-malware controls
+      typical_evidence: Antivirus logs and configuration
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.f
+      name: 06.f - Information Backup
+      description: Backup procedures
+      typical_evidence: Backup logs and test reports
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.g
+      name: 06.g - Event Logging
+      description: Security event logging
+      typical_evidence: Log configuration and retention
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.h
+      name: 06.h - Protection of Log Information
+      description: Security of audit logs
+      typical_evidence: Log protection measures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.i
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.i
+      name: 06.i - Administrator and Operator Logs
+      description: Logging of administrative actions
+      typical_evidence: Admin activity logs
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.j
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.j
+      name: 06.j - Clock Synchronization
+      description: System time synchronization
+      typical_evidence: NTP configuration
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.k
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.k
+      name: 06.k - Installation of Software on Operational Systems
+      description: Control of software installation
+      typical_evidence: Software installation procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.l
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.l
+      name: 06.l - Network Controls
+      description: Network security management
+      typical_evidence: Network diagrams and configurations
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.m
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.m
+      name: 06.m - Segregation in Networks
+      description: Network segmentation
+      typical_evidence: Network segmentation documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.n
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.n
+      name: 06.n - Network Connection Control
+      description: Control of network connections
+      typical_evidence: Firewall rules and ACLs
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.o
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.o
+      name: 06.o - Network Routing Control
+      description: Control of network routing
+      typical_evidence: Routing tables and policies
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.p
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.p
+      name: 06.p - Formal Transfer Policies
+      description: Information transfer policies
+      typical_evidence: Data transfer procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.q
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.q
+      name: 06.q - Procedures and Controls for Media in Transit
+      description: Protection of media in transit
+      typical_evidence: Media transport procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.r
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.r
+      name: 06.r - Electronic Messaging
+      description: Security of electronic messaging
+      typical_evidence: Email security configuration
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.s
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.s
+      name: 06.s - Business Information Systems
+      description: Security within business systems
+      typical_evidence: Business system security documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.t
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.t
+      name: 06.t - Publicly Available Information
+      description: Control of public information
+      typical_evidence: Public information procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.u
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.u
+      name: 06.u - Electronic Commerce
+      description: Security of e-commerce
+      typical_evidence: E-commerce security controls
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06.v
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:06
+      ref_id: 06.v
+      name: 06.v - On-Line Transactions
+      description: Security of online transactions
+      typical_evidence: Transaction security logs
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      assessable: true
+      depth: 1
+      ref_id: '07'
+      name: 07 - System Development and Maintenance
+      description: Control family for secure development
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.a
+      name: 07.a - Security Requirements Analysis and Specification
+      description: Security in requirements
+      typical_evidence: Security requirements documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.b
+      name: 07.b - Secure Development Policy
+      description: Policy for secure development
+      typical_evidence: Secure SDLC policy
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.c
+      name: 07.c - Change Control Procedures
+      description: Control of system changes
+      typical_evidence: Change control documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.d
+      name: 07.d - Technical Review of Applications After Operating Platform Changes
+      description: Technical reviews
+      typical_evidence: Technical review reports
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.e
+      name: 07.e - Restrictions on Changes to Software Packages
+      description: Control of packaged software
+      typical_evidence: Software change controls
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.f
+      name: 07.f - System Security Testing
+      description: Security testing procedures
+      typical_evidence: Security test reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.g
+      name: 07.g - Outsourced Development
+      description: Security in outsourced development
+      typical_evidence: Outsourcing security requirements
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.h
+      name: 07.h - Protection of Application Services on Public Networks
+      description: Public application security
+      typical_evidence: Public-facing application assessments
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.i
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.i
+      name: 07.i - Securing Application Services
+      description: Application service security
+      typical_evidence: Application security architecture
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07.j
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:07
+      ref_id: 07.j
+      name: 07.j - Technical Vulnerability Management
+      description: Vulnerability management process
+      typical_evidence: Vulnerability scan reports
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      assessable: true
+      depth: 1
+      ref_id: 08
+      name: 08 - Information Security Incident Management
+      description: Control family for incident response
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.a
+      name: 08.a - Incident Response Planning
+      description: Incident response plan development
+      typical_evidence: Incident response plan
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.b
+      name: 08.b - Incident Response Training
+      description: Training for incident response
+      typical_evidence: Training records
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.c
+      name: 08.c - Incident Response Testing
+      description: Testing of incident response
+      typical_evidence: Test reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.d
+      name: 08.d - Incident Response Handling
+      description: Incident handling procedures
+      typical_evidence: Incident handling playbooks
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.e
+      name: 08.e - Incident Response Monitoring
+      description: Monitoring for incidents
+      typical_evidence: Monitoring configuration
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.f
+      name: 08.f - Incident Response Reporting
+      description: Incident reporting procedures
+      typical_evidence: Incident reporting forms
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.g
+      name: 08.g - Collection of Evidence
+      description: Evidence collection procedures
+      typical_evidence: Evidence handling procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:08
+      ref_id: 08.h
+      name: 08.h - Learning from Information Security Incidents
+      description: Post-incident improvement
+      typical_evidence: Lessons learned documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      assessable: true
+      depth: 1
+      ref_id: 09
+      name: 09 - Business Continuity Management
+      description: Control family for business continuity
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.a
+      name: 09.a - Business Continuity Management Policy
+      description: BCM policy establishment
+      typical_evidence: BCM policy documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.b
+      name: 09.b - Implementing Business Continuity
+      description: BCM implementation procedures
+      typical_evidence: BCM implementation plans
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.c
+      name: 09.c - Business Continuity and Risk Assessment
+      description: Risk assessment for BCM
+      typical_evidence: Business impact analysis
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.d
+      name: 09.d - Developing and Implementing Continuity Plans
+      description: Continuity plan development
+      typical_evidence: Business continuity plans
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.e
+      name: 09.e - Business Continuity Plan Testing
+      description: Testing of BC plans
+      typical_evidence: BC test reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.f
+      name: 09.f - Business Continuity Plan Maintenance
+      description: Maintenance of BC plans
+      typical_evidence: BC plan update logs
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.g
+      name: 09.g - Information System Recovery and Restoration
+      description: IS recovery procedures
+      typical_evidence: Recovery playbooks
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:09
+      ref_id: 09.h
+      name: 09.h - Information System Backup
+      description: Backup strategy for recovery
+      typical_evidence: Backup procedures and tests
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      assessable: true
+      depth: 1
+      ref_id: '10'
+      name: 10 - Compliance
+      description: Control family for regulatory compliance
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.a
+      name: 10.a - Identification of Applicable Legislation
+      description: Legal requirements identification
+      typical_evidence: Legal register
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.b
+      name: 10.b - Intellectual Property Rights
+      description: IPR compliance procedures
+      typical_evidence: IPR compliance documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.c
+      name: 10.c - Protection of Organizational Records
+      description: Records protection procedures
+      typical_evidence: Records retention schedule
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.d
+      name: 10.d - Data Protection and Privacy
+      description: Privacy compliance measures
+      typical_evidence: Privacy impact assessments
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.e
+      name: 10.e - Prevention of Misuse of Information Processing Facilities
+      description: Acceptable use enforcement
+      typical_evidence: Usage monitoring reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.f
+      name: 10.f - Regulation of Cryptographic Controls
+      description: Cryptography compliance
+      typical_evidence: Crypto compliance documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.g
+      name: 10.g - Compliance with Security Policies and Standards
+      description: Security compliance checking
+      typical_evidence: Compliance assessment reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.h
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.h
+      name: 10.h - Technical Compliance Checking
+      description: Technical compliance validation
+      typical_evidence: Technical compliance scan reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.i
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.i
+      name: 10.i - Information Systems Audit Controls
+      description: IS audit control measures
+      typical_evidence: Audit scope and procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10.j
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:10
+      ref_id: 10.j
+      name: 10.j - Protection of Information Systems Audit Tools
+      description: Audit tool protection
+      typical_evidence: Audit tool access logs
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
+      assessable: true
+      depth: 1
+      ref_id: '11'
+      name: 11 - Mobile Security
+      description: Control family for mobile device security
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
+      ref_id: 11.a
+      name: 11.a - Mobile Device Policy
+      description: Policy for mobile device use
+      typical_evidence: Mobile device policy
+      implementation_groups:
+      - IG1
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
+      ref_id: 11.b
+      name: 11.b - Mobile Code
+      description: Control of mobile code
+      typical_evidence: Mobile code policy
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
+      ref_id: 11.c
+      name: 11.c - Teleworking
+      description: Security for remote work
+      typical_evidence: Telework security procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
+      ref_id: 11.d
+      name: 11.d - Mobile Device Management
+      description: MDM implementation
+      typical_evidence: MDM configuration
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:11
+      ref_id: 11.e
+      name: 11.e - BYOD Security
+      description: Bring Your Own Device controls
+      typical_evidence: BYOD policy and controls
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
+      assessable: true
+      depth: 1
+      ref_id: '12'
+      name: 12 - Supplier Relationships
+      description: Control family for third-party management
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
+      ref_id: 12.a
+      name: 12.a - Information Security in Supplier Relationships
+      description: Security requirements for suppliers
+      typical_evidence: Supplier security requirements
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
+      ref_id: 12.b
+      name: 12.b - Supplier Agreement Security
+      description: Security in supplier agreements
+      typical_evidence: Supplier contracts with security clauses
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
+      ref_id: 12.c
+      name: 12.c - Supplier Service Delivery
+      description: Monitoring supplier services
+      typical_evidence: Supplier performance reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
+      ref_id: 12.d
+      name: 12.d - Supplier Relationship Monitoring
+      description: Ongoing supplier monitoring
+      typical_evidence: Supplier audit reports
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:12
+      ref_id: 12.e
+      name: 12.e - Supplier Transition Management
+      description: Managing supplier changes
+      typical_evidence: Supplier transition plans
+      implementation_groups:
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      assessable: true
+      depth: 1
+      ref_id: '13'
+      name: 13 - Cloud Security
+      description: Control family for cloud computing security
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.a
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.a
+      name: 13.a - Cloud Security Architecture
+      description: Secure cloud architecture
+      typical_evidence: Cloud architecture documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.b
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.b
+      name: 13.b - Cloud Data Protection
+      description: Protection of cloud data
+      typical_evidence: Cloud data encryption documentation
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.c
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.c
+      name: 13.c - Cloud Identity and Access Management
+      description: Cloud IAM controls
+      typical_evidence: Cloud IAM configuration
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.d
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.d
+      name: 13.d - Cloud Monitoring and Logging
+      description: Cloud security monitoring
+      typical_evidence: Cloud monitoring configuration
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.e
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.e
+      name: 13.e - Cloud Incident Response
+      description: Cloud-specific incident response
+      typical_evidence: Cloud incident response procedures
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.f
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.f
+      name: 13.f - Cloud Compliance
+      description: Cloud compliance management
+      typical_evidence: Cloud compliance assessments
+      implementation_groups:
+      - IG2
+      - IG3
+    - urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13.g
+      assessable: true
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:hitrust-csf-v11:13
+      ref_id: 13.g
+      name: 13.g - Cloud Exit Planning
+      description: Cloud service exit strategy
+      typical_evidence: Cloud exit plans
+      implementation_groups:
+      - IG3
+  risk_matrix:
+  - urn: urn:intuitem:risk:risk_matrix:hitrust-csf-v11
+    ref_id: HITRUST-CSF-v11-RM
+    name: HITRUST CSF v11 Risk Matrix
+    description: Risk assessment matrix for HITRUST CSF v11
+    probability:
+    - id: 0
+      abbreviation: VL
+      name: Very Low
+      description: Probability < 10%
+    - id: 1
+      abbreviation: L
+      name: Low
+      description: Probability 10-35%
+    - id: 2
+      abbreviation: M
+      name: Medium
+      description: Probability 35-65%
+    - id: 3
+      abbreviation: H
+      name: High
+      description: Probability 65-90%
+    - id: 4
+      abbreviation: VH
+      name: Very High
+      description: Probability > 90%
+    impact:
+    - id: 0
+      abbreviation: VL
+      name: Very Low
+      description: Minimal impact
+    - id: 1
+      abbreviation: L
+      name: Low
+      description: Minor impact
+    - id: 2
+      abbreviation: M
+      name: Medium
+      description: Moderate impact
+    - id: 3
+      abbreviation: H
+      name: High
+      description: Major impact
+    - id: 4
+      abbreviation: VH
+      name: Very High
+      description: Severe impact
+    risk:
+    - id: 0
+      abbreviation: VL
+      name: Very Low
+      description: Minimal risk
+      hexcolor: '#92D050'
+    - id: 1
+      abbreviation: L
+      name: Low
+      description: Low risk
+      hexcolor: '#FFFF00'
+    - id: 2
+      abbreviation: M
+      name: Medium
+      description: Medium risk
+      hexcolor: '#FFFF00'
+    - id: 3
+      abbreviation: H
+      name: High
+      description: High risk
+      hexcolor: '#FFC000'
+    - id: 4
+      abbreviation: VH
+      name: Very High
+      description: Critical risk
+      hexcolor: '#FF0000'
+    grid:
+    - - 0
+      - 0
+      - 1
+      - 2
+      - 3
+    - - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    - - 1
+      - 2
+      - 3
+      - 3
+      - 4
+    - - 2
+      - 3
+      - 3
+      - 4
+      - 4
+    - - 3
+      - 4
+      - 4
+      - 4
+      - 4
